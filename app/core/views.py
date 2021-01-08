@@ -9,15 +9,15 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 @api_view(['POST'])
-def apiOverview(request):
+def apiBook(request):
     # takes a booking of item from inventory based on
     # name of member
     # provides a reference number and records it
     # max    booking must not be over 2 AND inventory remaining count cannot be 0.
     pass
-
+ 
 @api_view(['DEL'])
-def apiCanel(request):
+def apiCancel(request):
     # delete based on reference provided.
     # return inventory + 1
     # member booking reduced by 1
